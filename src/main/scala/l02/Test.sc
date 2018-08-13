@@ -22,3 +22,15 @@ def f2(x: Int) = x * 3
 println(f2(3))
 
 def f3(x: => Int) = x + 3
+
+def max(x: Int, y: Int): Int ={
+  if(x > y) x
+  else y
+}
+
+println(max(3,5))
+
+def min(z: Int, q: Int): Int= {
+  if(z < q)  q
+  else z
+}

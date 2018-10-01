@@ -14,6 +14,16 @@ case class Rational (n: Int, d: Int) { // n - numer (числитель), d -den
   def + (that: Rational) = Rational(numer * that.denom + that.numer * denom, denom * that.denom)
   def - (that: Rational) = Rational(numer * that.denom - that.numer * denom, denom * that.denom)
 
+  def > (that: Rational) : Boolean = {
+    if(numer * that.denom > that.numer * denom) true
+    else false
+  }
+
+  def < (that: Rational) : Boolean = {
+    if(numer * that.denom < that.numer * denom) true
+    else false
+  }
+
   private def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 
   override def toString = s"$numer/$denom"

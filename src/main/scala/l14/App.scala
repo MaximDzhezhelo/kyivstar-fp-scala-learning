@@ -14,13 +14,16 @@ object App {
     val e = a - b
     val g = a + b
     val k = a / b
-
+    val l = a > b
+    val t = a < b
 
     println("multiplication " + c)
     println("multiplication " + d)
     println("subtraction " + e)
     println("addition " + g)
     println("division " + k)
+    println("> " + l)
+    println("< " + t)
   }
 
 }

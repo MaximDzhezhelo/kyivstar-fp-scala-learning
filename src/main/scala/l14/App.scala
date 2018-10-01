@@ -13,12 +13,14 @@ object App {
     val d = a.*(b)
     val e = a - b
     val g = a + b
+    val k = a / b
 
 
-    println(c)
-    println(d)
-    println(e)
-    println(g)
+    println("multiplication " + c)
+    println("multiplication " + d)
+    println("subtraction " + e)
+    println("addition " + g)
+    println("division " + k)
   }
 
 }

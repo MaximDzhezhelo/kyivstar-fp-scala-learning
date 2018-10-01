@@ -9,6 +9,7 @@ case class Rational (n: Int, d: Int) { // n - numer (числитель), d -den
   val denom = d/g
 
   def * (that: Rational) = Rational(numer * that.n, denom * that.d)
+  def / (that: Rational) = Rational(numer * that.d, denom * that.n)
 
   def + (that: Rational) = Rational(numer * that.denom + that.numer * denom, denom * that.denom)
   def - (that: Rational) = Rational(numer * that.denom - that.numer * denom, denom * that.denom)

@@ -34,3 +34,5 @@ def min(z: Int, q: Int): Int= {
   if(z < q)  q
   else z
 }
+
+31 toHexString
